@@ -1,0 +1,20 @@
+{
+  "id": "/",
+  "name": "Tailor Master Pro - OBS کھاتہ رجسٹر",
+  "short_name": "درزی ماسٹر",
+  "description": "پیشہ ورانہ درزی دکان مینجمنٹ، کاریگر کٹنگ پرچی، ناپ، کھاتہ، بلوٹوتھ پرنٹر اور واٹس ایپ رسید۔",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#052e16",
+  "theme_color": "#064e3b",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

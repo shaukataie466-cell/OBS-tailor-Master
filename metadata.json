@@ -1,0 +1,6 @@
+{
+  "name": "Tailor Master Pro - درزی ماسٹر پرو",
+  "description": "Professional tailoring shop management, Karigar cutting slip generation, measurements, billing, thermal printer & WhatsApp receipts.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

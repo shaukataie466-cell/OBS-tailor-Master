@@ -1,0 +1,57 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', 'Noto Sans Arabic', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.font-urdu {
+  font-family: 'Noto Nastaliq Urdu', 'Noto Sans Arabic', system-ui, sans-serif;
+  line-height: 1.8;
+}
+
+.font-arabic {
+  font-family: 'Noto Sans Arabic', system-ui, sans-serif;
+}
+
+/* Print Styles for Thermal Printer (58mm / 80mm) */
+@media print {
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  /* Hide all UI elements during print */
+  body > * {
+    visibility: hidden;
+  }
+  
+  #printableSlipArea, #printableSlipArea * {
+    visibility: visible;
+  }
+  
+  #printableSlipArea {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 78mm;
+    max-width: 100%;
+    margin: 0;
+    padding: 4mm 2mm;
+    background: #fff;
+    color: #000;
+    font-size: 11px;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  @page {
+    size: 80mm auto;
+    margin: 0;
+  }
+}
